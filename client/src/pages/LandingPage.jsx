@@ -204,7 +204,7 @@ function LandingPage({ setLoading }) {
               <h1 style={{ fontSize: "2rem" }}>
                 Vulnerability Assessment and Penetrating Testing
               </h1>
-              <p style={{ width: "70%", fontSize: "16px" }}>
+              <p style={{ width: "100%", fontSize: "16px" ,textAlign:"left"}}>
                 A vulnerability assessment, often encompassing vulnerability
                 scanning, is designed to help identify, classify and address
                 security risks in your network, operating systems, firewalls,
@@ -247,7 +247,7 @@ function LandingPage({ setLoading }) {
                   Our company is here to provide you a wide range of services
                   which include:
                 </p>
-                <ul style={{ lineHeight: "3rem" }}>
+                <ul style={{ lineHeight: "3rem" ,textAlign:"left"}}>
                   <li>Skilled leadership</li>
                   <li>Professional service delivery</li>
                   <li>Highly trained staff who take pride in their work</li>
