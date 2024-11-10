@@ -8,8 +8,8 @@ async function createUserRequestForAppointment(req, res) {
     let appointment = Number(req.body.appointment);
     // convert the appointment to a date object
     appointment = new Date(appointment);
-    console.log(req.body);
-    console.log(appointment);
+    // console.log(req.body);
+    // console.log(appointment);
     try {
         
     if(!name || name.length <3) {
@@ -71,13 +71,13 @@ async function updateRequest(req,res) {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth : {
-        user : `${process.env.EMAIL}`,	
+        user : `${process.env.EMAIL}`,	 
         pass : `${process.env.API_KEY}`  
       } 
     });
 
     let mailOptions = {
-        from: process.env.EMAIL,
+        from: `${process.env.EMAIL}`,
         to: email,
         subject: 'SafeMax Appointment Request',
         text: `Hello, ${name} ! Your appointment request has been received. We will get back to you soon.

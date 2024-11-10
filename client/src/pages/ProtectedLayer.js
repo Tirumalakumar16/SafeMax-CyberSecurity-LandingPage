@@ -10,7 +10,7 @@ function ProtectedLayer({ children }) {
     {
       label: (
         <Link
-          to={"/"}
+        
           onClick={() => (window.location.href = "/")}
           className="safeMax-logo1"
         >
